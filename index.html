@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gigachad Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="timer.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="time " id="time">
+          <h2 id="min1">00</h2>
+          <h2 class="0">:</h2>
+          <h2 id="sec1">00</h2>
+        </div>
+        </div>
+        <div class="input">
+          <input type="number" id="min" placeholder="00" />
+          <p>:</p>
+          <input type="number" id="sec" placeholder="00" />
+        </div>
+        <div class="text">
+          <h1>MIN</h1>
+          <h1>SEC</h1>
+        </div>
+        <div class="btn-box">
+          <button type="submit" class="input-btn" onclick="timerStart()">
+            Go!!
+          </button>
+          <button id="pause" class="input-btn pause disable" onclick="stopTimer()">
+            Pause
+          </button>
+          <button class="input-btn" type="reset" onclick="reload()">Reset</button>
+        </div>
+        <button onclick="randomColorGenerator()" class="input-btn color" >Change BG color</button>
+      </div>
+    </div>
+    <audio src="gigachad.mp3" id="sound"></audio>
+  </body>
+</html>
